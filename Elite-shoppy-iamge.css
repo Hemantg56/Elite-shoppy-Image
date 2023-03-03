@@ -1,0 +1,145 @@
+    * {
+        box-sizing: border-box;
+    }
+    
+    .main {
+        height: 400px;
+        /* background: lightblue; */
+        display: flex;
+    }
+    
+    .main .fimage {
+        height: 300px;
+        width: 550px;
+        /* background: lightcoral; */
+        margin: 55px 0 0 80px;
+        border: 15px solid black;
+        background-origin: border-box;
+        position: relative;
+        z-index: 0;
+        overflow: hidden;
+    }
+    
+    .main .fimage .name1 {
+        font-size: 2rem;
+        color: #fff;
+        line-height: 250px;
+        margin-left: 260px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        z-index: 0;
+    }
+    
+    .main .fimage .name1::first-letter {
+        font-weight: 900;
+        color: red;
+        z-index: 0;
+    }
+    
+    .main .fimage .border {
+        height: 200px;
+        width: 450px;
+        border: 4px solid #fff;
+        position: absolute;
+        top: 35px;
+        left: 35px;
+        opacity: 0;
+        /* z-index: 5; */
+        transition: 0.5s;
+        margin-left: -20px;
+    }
+    
+    .main .fimage .border .name3 {
+        color: #fff;
+        margin-left: 151px;
+        line-height: 250px;
+        letter-spacing: 15px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    
+    .fimage::after {
+        content: "";
+        height: 300px;
+        width: 610px;
+        background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/bottom1.jpg);
+        background-origin: border-box;
+        position: absolute;
+        top: 0;
+        left: -50px;
+        z-index: -3;
+        transition: 0.5s;
+    }
+    
+    .fimage:hover::after {
+        left: 0px;
+    }
+    
+    .fimage:hover .border {
+        opacity: 1;
+        margin-left: 0px;
+    }
+    
+    .main .simage {
+        height: 300px;
+        width: 550px;
+        /* background: lightcoral; */
+        margin: 55px 0 0 80px;
+        border: 15px solid black;
+        position: relative;
+        z-index: 0;
+        overflow: hidden;
+    }
+    
+    .main .simage .name2 {
+        font-size: 2rem;
+        color: #fff;
+        line-height: 250px;
+        margin-left: 260px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        z-index: 0;
+    }
+    
+    .main .simage .name2::first-letter {
+        font-weight: 900;
+        color: red;
+        z-index: 0;
+    }
+    
+    .main .simage .border {
+        height: 200px;
+        width: 450px;
+        border: 4px solid #fff;
+        position: absolute;
+        top: 35px;
+        left: 35px;
+        opacity: 0;
+        /* z-index: 5; */
+        transition: 0.5s;
+    }
+    
+    .main .simage .border .name3 {
+        color: #fff;
+        margin-left: 151px;
+        line-height: 250px;
+        letter-spacing: 15px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    
+    .simage::after {
+        content: "";
+        height: 300px;
+        width: 610px;
+        background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(https://demo.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/bottom2.jpg);
+        position: absolute;
+        top: 0;
+        left: -50px;
+        z-index: -3;
+        transition: 0.5s;
+    }
+    
+    .simage:hover::after {
+        left: 0px;
+    }
+    
+    .simage:hover .border {
+        opacity: 1;
+    }
